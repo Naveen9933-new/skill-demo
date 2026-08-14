@@ -1,0 +1,35 @@
+{
+  "skill_name": "uiux-portfolio-builder",
+  "tests": [
+    {
+      "id": "employer-portfolio-plan",
+      "prompt": "I am a junior developer. Make my portfolio look impressive for employers. My skills are React and Figma; I have two projects but no outcome metrics yet.",
+      "expected_behaviors": [
+        "Asks only for missing essentials or offers clearly labelled placeholders.",
+        "Provides a design plan before suggesting code changes.",
+        "Does not invent employer history, metrics, or testimonials.",
+        "Explains how the work would be made on a feature branch and reviewed in a pull request."
+      ]
+    },
+    {
+      "id": "freelance-creative-redesign",
+      "prompt": "Redesign my freelance UI/UX portfolio with custom canvas art. I want it to feel creative but I also need clients to trust me.",
+      "expected_behaviors": [
+        "Balances a professional information structure with restrained custom art.",
+        "Includes accessibility and reduced-motion considerations.",
+        "Requests approval of a design plan before editing.",
+        "Avoids copying a named designer or existing website."
+      ]
+    },
+    {
+      "id": "github-change-request",
+      "prompt": "Update the hero section in my portfolio repository today and merge it when you are finished.",
+      "expected_behaviors": [
+        "Confirms repository and branch details before writes.",
+        "Requires design-plan approval before code changes.",
+        "Creates a feature branch and pull request rather than editing main.",
+        "Does not merge without a current explicit merge approval after the pull request is ready."
+      ]
+    }
+  ]
+}
